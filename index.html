@@ -17,11 +17,15 @@
           </div>
           <div class="menu__hidden menu-hide">
             <ul class="menu__lists">
-              <li class="menu__list"> <a class="menu__link" href="#">О маркете</a></li>
-              <li class="menu__list"><a class="menu__link" href="#">Как работает</a></li>
-              <li class="menu__list"><a class="menu__link" href="#">FAQ</a></li>
-              <li class="menu__list"><a class="menu__link" href="#">Стать частью команды</a></li>
-              <li class="menu__list"><a class="menu__link" href="#">Контакты</a></li>
+              <li class="menu__list"> <a class="menu__link" href="#market">О маркете</a></li>
+              <li class="menu__list"><a class="menu__link" href="#work">Как работает</a></li>
+              <li class="menu__list"><a class="menu__link" href="#faq">FAQ</a></li>
+              <li class="menu__list"><a class="menu__link" href="#start">Стать частью команды</a></li>
+              <li class="menu__list"><a class="menu__link" href="#map">Контакты</a></li>
+              <li class="menu__list menu__toggles">
+                <button class="menu__link menu__toggle" type="button">Ру</button><span class="menu__link">/</span>
+                <button class="menu__link menu__toggle" type="button">En</button>
+              </li>
             </ul>
           </div>
         </div>
@@ -29,13 +33,15 @@
     </header>
     <main class="main__page">
       <div class="market__bg">
-        <section class="market container" id="start">
+        <section class="market container" id="market">
           <div class="market__block">
             <h1 class="market__title">Альтернативный маркет</h1>
             <p class="market__text">Текст описания проекта в несколько строк, который должен занимать примерно 4-6 строк, в общих чертах описана суть. <br>Станьте частью бизнеса прямо сейчас</p>
             <form action="" method="post">
               <div class="market__connect">
-                <input class="market__input" id="mail" type="email" name="email" placeholder="Ваш e-mail" required>
+                <div class="tooltip" data-title="Ваш e-mail">
+                  <input class="market__input" id="mail" type="email" name="email" placeholder="Ваш e-mail" required>
+                </div>
                 <label class="visually-hidden" for="mail">Email</label>
                 <input class="market__button" type="submit" value="Стать инвестором">
               </div>
@@ -68,7 +74,7 @@
         </section>
       </div>
       <div class="work__bg">
-        <section class="work container">
+        <section class="work container" id="work">
           <h2 class="work__title">Как работает SiteName</h2>
           <div class="work__play">
             <video class="work__video" width="270" height="180" poster="img/video-bg-m.jpg"></video>
@@ -161,13 +167,13 @@
               <h2 class="load__title">Скачайте сейчас</h2>
               <p class="load__text">Присоединитесь к сотням тысяч пользователей<br> по всему миру</p>
             </div>
-            <div class="load__images"><img class="load__img" src="/img/app.png"><img class="load__img" src="/img/google.png"></div>
+            <div class="load__images"><img class="load__img" src="img/app.png"><img class="load__img" src="img/google.png"></div>
           </section>
         </div>
       </div>
       <div class="faq__bg">
         <div class="container">
-          <section class="faq">
+          <section class="faq" id="faq">
             <h2 class="faq__title">FAQ</h2>
             <div class="faq__block">
               <div class="faq__accordion">
@@ -200,7 +206,7 @@
                   </div>
                 </div>
               </div>
-              <div class="faq__img"><img src="img/iPhone2.png" alt="телефон"><a class="faq__up" href="#start"><span class="visually-hidden">Вверх</span></a></div>
+              <div class="faq__img"><img src="img/iPhone2.png" alt="телефон"><a class="faq__up" href="#market"><span class="visually-hidden">Вверх</span></a></div>
             </div>
           </section>
         </div>
@@ -211,11 +217,17 @@
             <h2 class="connect__title">Присоединяйтесь<br> к лучшим</h2>
             <p class="connect__description">Станьте инвестором, меняйте диджитал прямо сейчас</p>
             <form class="connect__form" action="" method="post">
-              <input class="connect__input" type="text" name="name" id="name" placeholder="Ваше имя" required>
+              <div class="tooltip" data-title="Ваше имя">
+                <input class="connect__input" type="text" name="name" id="name" placeholder="Ваше имя" required>
+              </div>
               <label class="visually-hidden" for="name">Ваше имя</label>
-              <input class="connect__input" type="tel" name="phone" id="phone" placeholder="Ваш телефон" required>
+              <div class="tooltip" data-title="Ваш телефон">
+                <input class="connect__input" type="tel" name="phone" id="phone" placeholder="Ваш телефон" required>
+              </div>
               <label class="visually-hidden" for="phone">Ваш телефон</label>
-              <input class="connect__input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
+              <div class="tooltip" data-title="Ваш e-mail">
+                <input class="connect__input" type="email" name="email" id="email" placeholder="Ваш e-mail" required>
+              </div>
               <label class="visually-hidden" for="email">Ваш e-mail</label>
               <div class="connect__consent">
                 <input class="connect__checkbox" type="checkbox" name="consent" id="checkbox" checked>
@@ -230,7 +242,7 @@
       </div>
       <div class="start__bg">
         <div class="container"> 
-          <section class="start">
+          <section class="start" id="start">
             <h2 class="start__title">Начните работу<br> в лучшей команде сегодня</h2>
             <p class="start__text">Оставьте заявку, наш<br> HR-менеджер свяжется с вами в течение 15 минут</p>
             <form class="start__form" action="" method="post">
@@ -242,9 +254,13 @@
                 </select>
               </div>
               <div class="start__block">
-                <input class="start__input" type="text" name="name-start" id="name-start" placeholder="Ваше имя" required>
+                <div class="tooltip" data-title="Ваше имя">
+                  <input class="start__input" type="text" name="name-start" id="name-start" placeholder="Ваше имя" required>
+                </div>
                 <label class="visually-hidden" for="name-start">Ваше имя</label>
-                <input class="start__input" type="tel" name="phone-start" id="phone-start" placeholder="Номер телефона" required>
+                <div class="tooltip" data-title="Номер телефона">
+                  <input class="start__input" type="tel" name="phone-start" id="phone-start" placeholder="Номер телефона" required>
+                </div>
                 <label class="visually-hidden" for="phone-start">Номер телефона</label>
               </div>
               <div class="start__consent">
@@ -260,7 +276,7 @@
       </div>
       <div class="map__bg">
         <div class="container">
-          <section class="map">
+          <section class="map" id="map">
             <div class="map__block">
               <h2 class="map__title">Контакты</h2>
               <p class="map__text">г. Новогородск, <span>ул. Шпальная, 12</span></p><a class="map__tel" href="tel: 88005525225">8 800 552 52 25</a><a class="map__button" href="#">Заказать звонок</a>

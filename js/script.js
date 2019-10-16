@@ -20,10 +20,12 @@ var scrolled;
 window.onscroll = function() {
     scrolled = window.pageYOffset || document.documentElement.scrollTop;
     if(scrolled > 5){
-        $(".menu__fixed").css({"background": "#ffffff"});
+        $(".menu__fixed").css({"background": "#ffffff"}).css({"box-shadow": "0px 4px 20px rgba(0, 0, 0, 0.1)"});
+        $(".menu__logo").css({"background": "#ffffff"});
     }
     if(5 > scrolled){
-        $(".menu__fixed").css({"background": "none"});
+        $(".menu__fixed").css({"background": "none"}).css({"box-shadow": "none"});
+        $(".menu__logo").css({"background": "none"});
     }
 };
 
