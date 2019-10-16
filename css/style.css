@@ -98,48 +98,20 @@ input[type="radio"].visually-hidden {
   content: attr(data-title);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
-  position: absolute;
-  min-width: 100px;
-  min-height: 48px;
-  font-style: normal;
-  padding: 5px 10px;
-  font-weight: bold;
-  font-size: 15px;
-  line-height: 120%;
-  color: #131313;
-  text-align: center;
-  background: #FFFFFF;
-  -webkit-box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
-  border-radius: 5px;
-  vertical-align: middle;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-pack: center;
-      -ms-flex-pack: center;
-          justify-content: center;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  top: -50px;
-  left: 5px;
-  opacity: 0;
-}
-.tooltip::after {
-  content: "";
-  background: #ffffff;
   position: absolute;
-  width: 15px;
-  height: 15px;
-  display: block;
-  -webkit-transform: rotate(45deg);
-          transform: rotate(45deg);
-  top: -10px;
-  left: 50px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 10px;
+  line-height: 160%;
+  color: #292929;
+  top: 0;
+  left: 20px;
+  z-index: 5;
   opacity: 0;
 }
-.tooltip:hover::after,
 .tooltip:hover::before {
   opacity: 1;
 }
