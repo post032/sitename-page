@@ -1486,7 +1486,7 @@ input[type="radio"].visually-hidden {
 }
 @media (min-width: 768px) {
   .comments__bg {
-    background: url("../img/comments-c.png") no-repeat 21% 105%, url("../img/comments.png") no-repeat right bottom;
+    background: url("../img/comments-c.png") no-repeat 2% 105%, url("../img/comments.png") no-repeat right bottom;
   }
   .comments__desktop {
     display: -webkit-box;
@@ -1505,6 +1505,9 @@ input[type="radio"].visually-hidden {
   }
 }
 @media (min-width: 1160px) {
+  .comments__bg {
+    background: url("../img/comments-c.png") no-repeat 27% 105%, url("../img/comments.png") no-repeat right bottom;
+  }
   .comments {
     padding-top: 71px;
   }
