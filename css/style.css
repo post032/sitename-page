@@ -398,7 +398,6 @@ input[type="radio"].visually-hidden {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  background: #ffffff;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
@@ -1100,6 +1099,9 @@ input[type="radio"].visually-hidden {
     width: 1100px;
     height: 480px;
     border-radius: 5px;
+    border: 20px solid #fff;
+    -webkit-box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
+            box-shadow: 0px 4px 20px rgba(0, 0, 0, 0.1);
   }
 }
 .advantage__bg {
